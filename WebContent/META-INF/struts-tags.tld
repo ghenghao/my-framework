@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+		 http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+  <description><![CDATA["Security JSP Tag"]]></description>
+  <display-name>"Security Tags"</display-name>
+  <tlib-version>1.1</tlib-version>
+  <short-name>security</short-name>
+  <uri>/security</uri>
+  <tag>
+    <description><![CDATA[判断当前用户是否已经登录]]></description>
+    <name>user</name>
+    <tag-class>org.apache.shiro.web.tags.UserTag</tag-class>
+    <body-content>JSP</body-content>
+   </tag>
+   <tag>
+   	<description><![CDATA[判断当前用户是否未登录]]></description>
+    <name>guest</name>
+    <tag-class>org.apache.shiro.web.tags.GuestTag</tag-class>
+    <body-content>JSP</body-content>
+   </tag>
+</taglib>
